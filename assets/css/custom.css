@@ -1,13 +1,13 @@
 /**
-* FreightOps Custom CSS
-* Custom colors and styling for FreightOps website
+* Marvio Custom CSS
+* Custom colors and styling for Marvio website
 */
 
 /*--------------------------------------------------------------
 # Color Variables Override
 --------------------------------------------------------------*/
 :root {
-  /* FreightOps Color Palette - Focused */
+  /* Marvio Color Palette - Focused */
   --primary-blue: #01497C;    /* Deep blue - primary color */
   --accent-red: #FF6B6B;      /* Vibrant red - accent color */
   --accent-teal: #3ED7B0;     /* Teal - secondary accent */
