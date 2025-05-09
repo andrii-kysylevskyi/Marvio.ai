@@ -65,39 +65,55 @@ button[type=submit]:hover {
 }
 
 /*--------------------------------------------------------------
-# Custom Service Items
+# Service Items
 --------------------------------------------------------------*/
-/* Override service item colors */
-.services .service-item.item-cyan i {
+/* Service icon boxes */
+.services .icon-box {
+  background-color: var(--surface-color);
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  border-bottom: 3px solid var(--accent-red);
+}
+
+.services .icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.services .icon-box .title a {
+  color: var(--heading-color);
+  transition: 0.3s;
+}
+
+.services .icon-box .description {
+  font-size: 15px;
+  margin-bottom: 0;
+}
+
+.services .icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
   color: var(--primary-blue);
 }
 
-.services .service-item.item-cyan:hover .icon path {
-  fill: var(--primary-blue);
+.services .icon-box:hover {
+  transform: translateY(-5px);
 }
 
-.services .service-item.item-orange i {
+.services .icon-box:hover .title a {
   color: var(--accent-red);
-}
-
-.services .service-item.item-orange:hover .icon path {
-  fill: var(--accent-red);
-}
-
-.services .service-item.item-teal i {
-  color: var(--accent-teal);
-}
-
-.services .service-item.item-teal:hover .icon path {
-  fill: var(--accent-teal);
-}
-
-.services .service-item.item-red i {
-  color: var(--primary-blue);
-}
-
-.services .service-item.item-red:hover .icon path {
-  fill: var(--primary-blue);
 }
 
 /*--------------------------------------------------------------
@@ -187,4 +203,22 @@ button[type=submit]:hover {
   background-color: var(--accent-red) !important;
   color: white !important;
   border-color: var(--accent-red);
+}
+
+/* Ensure consistent team image sizes */
+.team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+  height: 320px; /* Fixed height for all member images */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+.team .team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* This ensures the image covers the area without distortion */
+  object-position: center top; /* Focus on the top part of the image (faces) */
 }
