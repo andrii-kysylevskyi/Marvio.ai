@@ -1,0 +1,190 @@
+/**
+* FreightOps Custom CSS
+* Custom colors and styling for FreightOps website
+*/
+
+/*--------------------------------------------------------------
+# Color Variables Override
+--------------------------------------------------------------*/
+:root {
+  /* FreightOps Color Palette - Focused */
+  --primary-blue: #01497C;    /* Deep blue - primary color */
+  --accent-red: #FF6B6B;      /* Vibrant red - accent color */
+  --accent-teal: #3ED7B0;     /* Teal - secondary accent */
+  --off-white: #F8F9F4;       /* Off-white - background/text color */
+  
+  /* Override template color variables */
+  --background-color: var(--off-white);
+  --default-color: #444444;
+  --heading-color: var(--primary-blue);
+  --accent-color: var(--accent-red);
+  --surface-color: #ffffff;
+  --contrast-color: #ffffff;
+}
+
+/* Nav Menu Colors Override */
+:root {
+  --nav-color: var(--primary-blue);
+  --nav-hover-color: var(--accent-red);
+  --nav-dropdown-background-color: #ffffff;
+  --nav-dropdown-color: var(--primary-blue);
+  --nav-dropdown-hover-color: var(--accent-red);
+}
+
+/* Color Presets Override */
+.light-background {
+  --background-color: #f6fafd;
+  --surface-color: var(--off-white);
+}
+
+.accent-background {
+  --background-color: var(--primary-blue);
+  --default-color: var(--off-white);
+  --heading-color: var(--off-white);
+  --accent-color: var(--accent-red);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --contrast-color: var(--off-white);
+}
+
+/*--------------------------------------------------------------
+# Custom Elements
+--------------------------------------------------------------*/
+.btn-getstarted,
+.btn-get-started,
+.read-more,
+button[type=submit] {
+  background-color: var(--accent-red) !important;
+  color: white !important;
+}
+
+.btn-getstarted:hover,
+.btn-get-started:hover,
+.read-more:hover,
+button[type=submit]:hover {
+  background-color: #ff5252 !important;
+}
+
+/*--------------------------------------------------------------
+# Custom Service Items
+--------------------------------------------------------------*/
+/* Override service item colors */
+.services .service-item.item-cyan i {
+  color: var(--primary-blue);
+}
+
+.services .service-item.item-cyan:hover .icon path {
+  fill: var(--primary-blue);
+}
+
+.services .service-item.item-orange i {
+  color: var(--accent-red);
+}
+
+.services .service-item.item-orange:hover .icon path {
+  fill: var(--accent-red);
+}
+
+.services .service-item.item-teal i {
+  color: var(--accent-teal);
+}
+
+.services .service-item.item-teal:hover .icon path {
+  fill: var(--accent-teal);
+}
+
+.services .service-item.item-red i {
+  color: var(--primary-blue);
+}
+
+.services .service-item.item-red:hover .icon path {
+  fill: var(--primary-blue);
+}
+
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+.hero:before {
+  background: rgba(1, 73, 124, 0.85); /* Primary blue with opacity */
+}
+
+.hero h1,
+.hero p {
+  color: var(--off-white);
+}
+
+.hero .icon-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 3px solid var(--accent-red);
+}
+
+.hero .icon-box .icon i {
+  color: var(--primary-blue);
+}
+
+.hero .icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.hero .icon-box:hover .title a {
+  color: var(--accent-red);
+}
+
+/*--------------------------------------------------------------
+# About Section
+--------------------------------------------------------------*/
+.about ul i {
+  color: var(--accent-red);
+}
+
+/*--------------------------------------------------------------
+# Call to Action
+--------------------------------------------------------------*/
+.call-to-action .cta-btn {
+  background: var(--accent-red);
+  color: white;
+  font-weight: 600;
+  border: 2px solid var(--accent-red);
+}
+
+.call-to-action .cta-btn:hover {
+  background: transparent;
+  color: var(--off-white);
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer .copyright {
+  background-color: var(--primary-blue);
+}
+
+.footer .social-links a {
+  color: var(--primary-blue);
+  border-color: var(--primary-blue);
+}
+
+.footer .social-links a:hover {
+  background-color: var(--accent-red);
+  color: white;
+  border-color: var(--accent-red);
+}
+
+/* Contact info items */
+.contact .info-item i {
+  background: var(--accent-red);
+}
+
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-member .social a {
+  background-color: var(--primary-blue) !important;
+  color: white !important;
+  border-color: var(--primary-blue);
+}
+
+.team .team-member .social a:hover {
+  background-color: var(--accent-red) !important;
+  color: white !important;
+  border-color: var(--accent-red);
+}
